@@ -8,15 +8,31 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <ul class="navbar">
-            <li class="navbar__links links__logo"><a href="index.html">Front page</a></li>
-            <li class="navbar__links"><a href="#">Resumé</a></li>
-            <li class="navbar__links"><a href="portfolio.html">Portfolio</a></li>
-            <li class="navbar__links"><a href="#">Specialising</a></li>
-            <li class="navbar__links"><a href="#">Hobbies</a></li>
-        </ul> 
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Nathalie</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Resumé</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Specialising</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Hobbies</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
+
     <main>
         <section class="firstSemester">
             <h1 class="firstSemester__header">1. Semester</h1>
@@ -49,30 +65,34 @@
         </section>
         <section class="secondSemester">
             <h1 class="secondSemester__header">2. Semester</h1>
-            <article>
-                <img src="images/empty-img.PNG" alt="empty images">
-                <h3>Header</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <article class="portfolio">
+                <img class="portfolio__img" src="images/empty-img.PNG" alt="empty images">
+                <h3 class="portfolio__header">Header</h3>
+                <p class="portfolio__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </article>
-            <article>
-                <img src="images/empty-img.PNG" alt="empty images">
-                <h3>Header</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <article class="portfolio">
+                <img class="portfolio__img" src="images/empty-img.PNG" alt="empty images">
+                <h3 class="portfolio__header">Header</h3>
+                <p class="portfolio__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </article>
-            <article>
-                <img src="images/empty-img.PNG" alt="empty images">
-                <h3>Header</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <article class="portfolio">
+                <img class="portfolio__img" src="images/empty-img.PNG" alt="empty images">
+                <h3 class="portfolio__header">Header</h3>
+                <p class="portfolio__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </article>
-            <article>
-                <img src="images/empty-img.PNG" alt="empty images">
-                <h3>Header</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <article class="portfolio">
+                <img class="portfolio__img" src="images/empty-img.PNG" alt="empty images">
+                <h3 class="portfolio__header">Header</h3>
+                <p class="portfolio__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </article>
         </section>
     </main>
-    <footer>
 
+    <footer>
+        <a href="https://www.linkedin.com/in/nathalie-henriette-autzen-5b8901254/">LinkedIn</a>
+        <a href="https://github.com/NathalieAutzen">Github</a>
+        <a href="https://www.instagram.com/yay_its_nathalie/">Instagram</a>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
