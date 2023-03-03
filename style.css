@@ -10,7 +10,7 @@
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
     --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
     */
-    --fontSizeMedium: 1rem;
+    --fontSizeMedium: 1.2rem;
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
     --font-family: 'NSimSum', 'Times New Roman', Times, serif;
@@ -33,6 +33,8 @@ header {
 }
 footer {
     background-color: var(--backgroundHeader-color);
+    display: flex;
+    justify-content: center;
 }
 .navbar {
     list-style: none;
@@ -103,6 +105,9 @@ a {
 .nav-logoImg {
     max-width: 25%;
 }
+.whichPage {
+    text-align: center;
+}
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
@@ -165,6 +170,7 @@ a {
     margin: .5rem;
     border: solid gray 1px;
     border-radius: 15px;
+    box-shadow: 5px 5px 3px lightblue;
 }
 .portfolio__img {
     display: block;
@@ -193,7 +199,11 @@ a {
     grid-column: span 2;
 }
 .media_link {
+    max-width: 100%;
+}
+.media {
     max-width: 5%;
+    margin: 1rem;
 }
 
 /* Big phones */
