@@ -13,6 +13,7 @@
     --fontSizeMedium: 1.2rem;
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
+    --fontSizeXXLarge: calc(var(--fontSizeMedium)*3);
     --font-family: 'NSimSum', 'Times New Roman', Times, serif;
 
     /*spacing*/
@@ -107,6 +108,7 @@ a {
 }
 .whichPage {
     text-align: center;
+    font-size: var(--fontSizeXXLarge);
 }
 
 @media only screen and (max-width: 768px) {
@@ -156,21 +158,30 @@ a {
 
 
 
-/*  ---- portfolio ----  */
+/*  ---- ---- portfolio ---- ----  */
 .firstSemester {
+    margin: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .firstSemester__header {
+    margin-top: 2rem;
     grid-column: span 2;
+    text-align: center;
     font-size: var(--fontSizeXLarge)
 }
+.firstSemester__headerText {
+    grid-column: span 2;
+    text-align: center;
+    font-size: var(--fontSizeMedium);
+}
 .portfolio {
-    padding: .5rem;
-    margin: .5rem;
+    padding: 1rem;
+    margin: 1rem;
     border: solid gray 1px;
     border-radius: 15px;
-    box-shadow: 5px 5px 3px lightblue;
+    box-shadow: 4px 4px 3px lightblue;
+
 }
 .portfolio__img {
     display: block;
@@ -185,24 +196,35 @@ a {
     margin-top: 0rem;
     margin-bottom: 0rem;
     font-size: var(--fontSizeLarge);
+    padding-left: 1rem;
 }
 .portfolio__text {
     margin-top: 0rem;
     font-size: var(--fontSizeMedium);
+    padding: 1rem;
 }
 
 .secondSemester {
+    margin: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .secondSemester__header {
+    margin-top: 2rem;
     grid-column: span 2;
+    font-size: var(--fontSizeXLarge);
+    text-align: center;
+}
+.secondSemester__headerText {
+    grid-column: span 2;
+    text-align: center;
+    font-size: var(--fontSizeMedium);
 }
 .media_link {
     max-width: 100%;
 }
 .media {
-    max-width: 5%;
+    max-width: 10%;
     margin: 1rem;
 }
 
@@ -215,12 +237,22 @@ a {
     .firstSemester__header {
         grid-column: span 3;
     }
+    .firstSemester__headerText {
+        grid-column: span 3;
+    }
     .secondSemester {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .secondSemester__header {
         grid-column: span 3;
+    }
+    .secondSemester__headerText {
+        grid-column: span 3;
+    }
+    .media {
+        max-width: 7%;
+        margin: 1rem;
     }
 }
 
@@ -233,12 +265,22 @@ a {
     .firstSemester__header {
         grid-column: span 4;
     }
+    .firstSemester__headerText {
+        grid-column: span 4;
+    }
     .secondSemester {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .secondSemester__header {
         grid-column: span 4;
+    }
+    .secondSemester__headerText {
+        grid-column: span 4;
+    }
+    .media {
+        max-width: 5%;
+        margin: 1rem;
     }
 }
 
@@ -251,11 +293,17 @@ a {
     .firstSemester__header {
         grid-column: span 5;
     }
+    .firstSemester__headerText {
+        grid-column: span 5;
+    }
     .secondSemester {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     .secondSemester__header {
+        grid-column: span 5;
+    }
+    .secondSemester__headerText {
         grid-column: span 5;
     }
 }
