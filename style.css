@@ -157,7 +157,10 @@ a {
 
 
 /*  ---- ---- Forside ---- ----  */
-
+.profile_image {
+    max-width: 40%;
+    background-color: var(--backgroundProfile-color);
+}
 
 
 
