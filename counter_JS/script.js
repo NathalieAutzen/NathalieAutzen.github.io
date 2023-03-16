@@ -1,5 +1,6 @@
 // DOM query on the buttons
 const buttons = document.querySelectorAll('.counterBtn');
+console.log(buttons);
 
 // variable for the counter value:
 let counter = 0;
@@ -24,8 +25,15 @@ buttons.forEach(function(button){
 
         // Hint til opgave 6:
         // Style color like this: value.style.color = 'red'
+        if(counter < 0) {
+            value.style.color = 'red';
+        } else if(counter > 0) {
+            value.style.color = 'green';
+        } else {
+            value.style.color = 'black';
+        } // end else
 
-    }
+    } // end counterFunction()
 
-});
+}); // end forEach()
 
