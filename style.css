@@ -158,9 +158,42 @@ a {
 
 /*  ---- ---- Forside ---- ----  */
 .profile_image {
-    max-width: 40%;
+    max-width: 80%;
     background-color: var(--backgroundProfile-color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+.profile_name {
+    text-align: center;
+    font-size: var(--fontSizeXXLarge);
+}
+.buttonsSection {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    gap: 1rem;
+}
+.button {
+    background-color: white;
+    border: .5px solid black;
+    color: black;
+    padding: 40px;
+    font-size: var(--fontSizeXLarge);
+    font-family: var(--font-family);
+    border-radius: 35px;
+}
+.button_resume {
+    margin-top: 3rem;
+}
+.button_hobbies {
+    margin-bottom: 2rem;
+}
+
+
+
 
 
 
@@ -246,6 +279,12 @@ a {
 
 /* Big phones */
 @media only screen and (min-width: 500px) {
+    .profile_image {
+        max-width: 70%;
+    }
+
+
+
     .firstSemester {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -280,6 +319,19 @@ a {
 
 /* Tablets */
 @media only screen and (min-width: 768px) {
+    .profile_image {
+        max-width: 60%;
+    }
+    .buttonsSection {
+        flex-wrap: wrap;
+    }
+    .button {
+        width: calc(40% - 0.5rem);
+    }
+
+
+
+
     .firstSemester {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
