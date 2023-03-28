@@ -158,3 +158,12 @@ a {
     margin: 2rem;
     font-size: var(--fontSizeLarge);
 }
+.trend_image {
+    width: 50%;
+}
+.system_img {
+    width: 50%;
+}
+.principles_img {
+    width: 49%;
+}
