@@ -1,0 +1,1014 @@
+/* --------navbar/burgermenu-------- */
+
+/* Burgermenu kopiret fra website https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+nav {
+    background-color: #302C42
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.nav-link:hover{
+    color: #72738b;
+}
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482FF7;
+}
+.nav-billede {
+    max-width: 8rem;
+    height: 8rem;
+    border-radius: 20%;
+}
+/* --------End navbar/burgermenu-------- */
+
+
+/* --------alle sider-------- */
+img {
+    max-width: 100%;
+}
+body {
+    background-color: #303274;
+    margin: 1rem;
+}
+/* Design af footer */
+footer {
+    background-color: #302C42;
+    margin-top: 2rem;
+}
+.footer_contact {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 5rem;
+}
+.footer-text {
+    text-align: center;
+    color: rgb(180, 180, 216);
+}
+.footer-text-small {
+    text-align: center;
+    color: rgb(180, 180, 216);
+}
+/* --------End alle sider-------- */
+
+
+/* --------Forside-------- */
+.banner-img {
+    width: 100%;
+}
+/*Opsætning og design af TheFatRat info*/
+.profil {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+.profil-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 4rem;
+}
+.profil-img {
+    width: 50%;
+    border-radius: 60%;
+    justify-self: center;
+}
+.profil-h2 {
+    color: white;
+}
+.profil-p {
+    color: white;
+    margin-top: 1rem;
+}
+/*Opsætning og design af Most popular music*/
+.body-music {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.body-music-h1 {
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+h3 {
+    color: white;
+}
+.unity {
+    border: 1px solid black;
+}
+.unity-image {
+    justify-self: center;
+}
+.unity-text {
+    text-align: center;
+}
+.monody {
+    margin-top: 2rem;
+    border: 1px solid black;
+}
+.monody-image {
+    justify-self: center;
+}
+.monody-text {
+    text-align: center;
+}
+.fly-away {
+    margin-top: 2rem;
+    border: 1px solid black;
+}
+.fly-away-image {
+    justify-self: center;
+}
+.fly-away-text {
+    text-align: center;
+}
+.the-calling {
+    margin-top: 2rem;
+    border: 1px solid black;
+}
+.the-calling-image {
+    justify-self: center;
+}
+.the-calling-text {
+    text-align: center;
+}
+/* --------End forsiden-------- */
+
+
+/* --------Contact siden-------- */
+/* Opsætning og styling af første section */
+.contact-body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.contact-body-h1 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    margin-bottom: 0rem;
+}
+.contact-img {
+    width: 30%;
+    border-radius: 25%;
+    justify-self: center;
+    border: 1px solid black;
+}
+.contact-info {
+    color: white;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+/* Opsætning og styling af anden section */
+.platform-body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.platform-body-h1 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    margin-bottom: 0rem;
+}
+.platform-img {
+    width: 30%;
+    border-radius: 25%;
+    justify-self: center;
+   
+}
+.platform-logo-img {
+    border-radius: 25%;
+    justify-self: center;
+}
+.platform-info {
+    color: white;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+/* --------Ende contact siden-------- */
+
+
+/* --------gallery side-------- */
+.gallery__heading {
+    text-align: center;
+    padding: 2rem;
+    grid-area: 1 / span 1;
+    font-size: 2.5rem;
+    color: white;
+}
+.underoverskrift-to {
+    margin: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+/* Styling og placering af billeder*/
+.photo__img {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 2px solid black;
+    justify-self: center;
+}
+
+/* Styling og placering af tekst*/
+.photo__text {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    justify-self: center;
+}
+
+/* --------End gallery side-------- */
+
+
+/* ------------ Music side -------------- */ 
+.musicpage-overskrift {
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+.nederstealbums {
+    border-bottom: 1px solid purple;
+    border-radius: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid purple;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+.singletopics {
+    color: white;
+   text-align: center;
+   padding-bottom: 2rem;
+    grid-area: 1 / span 3;
+    font-size: 2rem;
+}
+.overskrift-årstal {
+    grid-column: span 3;
+    text-align:left;
+    font-weight: bold;
+    color: white;
+}
+.songs {
+    border: 2px solid purple;
+}
+.albums--2015 {
+    margin-top: 3rem;
+}
+.albums--2018 {
+    margin-bottom: 5rem;
+}
+.albumstext {
+    color: white;
+    grid-area: 1 / span 2;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.albumsbillede-et {
+    padding: 1.2rem;
+    justify-self: end;
+    grid-area: 2 / 1 / 3 / 1;
+}
+.albumsbillede-to {
+    padding: 1.2rem;
+    justify-self: start;
+    grid-area: 2 / 2 / 3 / 2;
+}
+.album-et {
+    text-align: center;
+    color: white;
+}
+.album-to {
+    text-align: center;
+}
+/* --------MUSIC SIDE END-------- */ 
+
+
+/* Navbar/burgermenu responsive skalering (Kopiert fra anden hjemmeside) */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: #302C42;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+
+
+/*Tablet størrelse*/
+@media only screen and (min-width: 769px) {
+    /* --------Forside-------- */
+    /*Opskalering af font på profil*/
+    .profil-h2 {
+        color: white;
+        font-size: 16px;
+    }
+    .profil-p {
+        color: white;
+        font-size: 12px;
+    }
+    /*Opskalering og placering af Most Popular Music*/
+    .body-music {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .body-music-h1 {
+        color: white;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 22px;
+        grid-column: span 2
+    }
+    .unity-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .unity-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .monody {
+        margin-top: 0rem;
+        border: 1px solid black;
+    }
+    .monody-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .monody-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .fly-away {
+        margin-top: 0rem;
+        border: 1px solid black;
+    }
+    .fly-away-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .fly-away-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .the-calling {
+        margin-top: 0rem;
+        border: 1px solid black;
+    }
+    .the-calling-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+    .the-calling-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
+
+    /* --------Contact-------- */
+    /*Opskalering og placering af kontakt info*/
+    .contact-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 22px;
+        margin-bottom: 0rem;
+        grid-column: span 2;
+    }
+    .contact-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img3 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+    .contact-img4 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+    /*Opskalering og placering af platforms info*/
+    .platform-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .platform-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 22px;
+        margin-bottom: 0rem;
+        grid-column: span 2;
+    }
+    .platform-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img3 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+    .platform-img4 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+
+    /* --------Music-------- */
+    /*Opskalering og placering*/
+    .main-music {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .nederstealbums {
+        grid-area: 1 / 1 / 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 3rem;
+        border: none;
+    }
+    .nederstealbums img {
+        width: 60%;
+    }
+    .singletopics {
+        grid-area: 1 / span 3;
+        font-size: 2rem;
+    }
+    .albumstext {
+        font-size: 2rem;
+    }
+    .album-et {
+        padding-top: 3rem;
+    }
+    .album-to {
+        padding-top: 3rem;
+    }
+
+    /* --------Gallery-------- */
+    /*Opskalering og placering af galleriet*/
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery__heading {
+        text-align: center;
+        padding: 2rem;
+        grid-area: 1 / span 2;
+        font-size: 2.5rem;
+        color: white;
+    } 
+    
+}
+
+
+
+/*Laptop størrelse*/
+@media only screen and (min-width: 992px) {
+    /* --------alle sider-------- */
+    body {
+        background-image: url(images/logo-background.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #303274;
+        margin: 1rem;
+    }
+    .nav-link{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    /* --------Forside-------- */
+    .profil-h2 {
+        color: white;
+        font-size: 20px;
+    }
+    .profil-p {
+        color: white;
+        font-size: 14px;
+    }
+    /*Opskalering og placering af Most Popular Music i større grid*/
+    .body-music {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .body-music-h1 {
+        color: white;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 24px;
+        grid-column: span 3
+    }
+    .unity-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .unity-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .monody-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .monody-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .fly-away-image {
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .fly-away-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    .the-calling-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .the-calling-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    /* --------Contact side-------- */
+    /*Opskalering og placering kontakt info i større grid*/
+    .contact-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contact-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 24px;
+        margin-bottom: 0rem;
+        grid-column: span 3;
+    }
+    .contact-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+    .contact-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .contact-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .contact-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .contact-info4 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        text-align: center;
+    }
+    /*Opskalering og placering platform info i større grid*/
+    .platform-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .platform-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 24px;
+        margin-bottom: 0rem;
+        grid-column: span 3;
+    }
+    .platform-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+    .platform-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .platform-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .platform-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .platform-info4 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        text-align: center;
+    }
+
+    /* --------Music-------- */
+    /*Opskalering af font*/
+    .albumstext {
+        font-size: 3rem;
+    }
+    .singletopics {
+        font-size: 3rem;
+    }
+    .album-et {
+        font-size: 2.4rem;
+    }
+    .overskrift-årstal {
+        font-size: 2.4rem;
+    }
+    .nederstealbums {
+        width: 80%;
+    }
+
+    /* --------Gallery-------- */
+    /*Opskalering og placering af billeder i gallery*/
+    .gallery { 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery__heading {
+        text-align: center;
+        padding: 2rem;
+        grid-area: 1 / span 3;
+        font-size: 2.5rem;
+        color: white;
+    }
+}
+
+
+/*Stationær størrelse*/
+@media only screen and (min-width: 1200px) {
+    /* --------alle sider-------- */
+    .nav-link{
+        font-size: 2.0rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    /* --------Forside-------- */
+    .profil-h2 {
+        color: white;
+        font-size: 24px;
+    }
+    .profil-p {
+        color: white;
+        font-size: 16px;
+    }
+    /*Opskalering og placering i et større grid*/
+    .body-music {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .body-music-h1 {
+        color: white;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 28px;
+        grid-column: span 4
+    }
+    .unity-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .unity-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .monody-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .monody-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .fly-away-image {
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .fly-away-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    .the-calling-image {
+        justify-self: center;
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+    .the-calling-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 4;
+        grid-row-start: 3;
+    }
+    /* --------Contact side-------- */
+    /*Opskaleret og placering i et større grid*/
+    .contact-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .contact-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 28px;
+        margin-bottom: 0rem;
+        grid-column: span 4;
+    }
+    .contact-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img4 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .contact-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .contact-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .contact-info4 {
+        grid-column-start: 4;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .platform-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .platform-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 28px;
+        margin-bottom: 0rem;
+        grid-column: span 4;
+    }
+    .platform-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img4 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .platform-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .platform-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .platform-info4 {
+        grid-column-start: 4;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    /* --------Gallery-------- */
+    /*Opskaleret og placeret i større grid*/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .gallery__heading {
+        text-align: center;
+        padding: 2rem;
+        grid-area: 1 / span 4;
+        font-size: 2.5rem;
+        color: white;
+    }
+}
